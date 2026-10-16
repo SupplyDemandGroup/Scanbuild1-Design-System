@@ -1,0 +1,66 @@
+/* ============================================================
+   SCANBUILD DESIGN TOKENS — v0.1 DRAFT (16 Oct 2026)
+   Source of truth: towers-passport.scanbuild1.com.au (css/tp.css)
+   Status: PROVISIONAL until approved into 02_SCANBUILD_VISUAL_IDENTITY_STANDARD.md
+   Entity: ScanBuild / ScanBuild1 — not for PHD / House Doctor
+   ============================================================ */
+
+:root {
+  /* ---- Colour: dark canvas ---- */
+  --ground: #011A40;          /* primary dark background */
+  --ground-2: #02224F;        /* elevated dark surface */
+  --navy-3: #011638;          /* depth ramp (in-use tones) */
+  --navy-4: #0B1A2E;
+  --navy-5: #01143A;
+
+  /* ---- Colour: brand blues ---- */
+  --cobalt: #004AAD;          /* primary brand blue on light */
+  --deep: #003070;            /* deep blue, gradients/pressed */
+  --surge: #1A7CFF;           /* vivid interactive blue (large text on dark only) */
+  --sky: #6CA7F9;             /* secondary series, mesh, icons */
+  --ice: #A8CBFD;             /* tags, subtle dark-mode highlights */
+
+  /* ---- Colour: signal ---- */
+  --yellow: #F2CB07;          /* scan lines, stats, CTA on dark, footer bars */
+  --yellow-pale: #FFF3A6;     /* soft highlight */
+
+  /* ---- Colour: light canvas + neutrals ---- */
+  --mist: #F4F7F8;            /* light background */
+  --azure: #253238;           /* headings on light */
+  --slate: #5B7B8A;           /* secondary on light (large text) */
+  --slate-deep: #6E8793;      /* supporting grey */
+  --slate-light: #8FA6B2;
+  --text-2: #B7C6CE;          /* secondary text on dark */
+  --paper: #FFFFFF;
+
+  /* ---- Colour: structural lines ---- */
+  --line: rgba(91, 123, 138, .32);        /* hairlines on dark */
+  --line-strong: rgba(108, 167, 249, .45); /* mesh / emphasis lines */
+
+  /* ---- Typography ---- */
+  --f-display: 'Chakra Petch', 'Oxanium', sans-serif;   /* headlines, labels */
+  --f-body: 'IBM Plex Sans', system-ui, sans-serif;     /* body, long-form */
+  --f-mono: 'IBM Plex Mono', ui-monospace, monospace;   /* tracked labels, data */
+
+  /* ---- Layout ---- */
+  --max: 1240px;              /* web content max-width */
+  --sec: 120px;               /* section rhythm (72 / 120 / 150 scale) */
+  --pad: 40px;                /* gutter (20 mobile) */
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-io: cubic-bezier(.65, 0, .35, 1);
+}
+
+/* ---- Fonts (Google Fonts, open licence) ----
+   @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+*/
+
+/* ---- Signature treatments (reference patterns) ----
+   .stage-label  { font: 500 12px var(--f-mono); letter-spacing: .14em;
+                   text-transform: uppercase; color: var(--yellow); }
+   .scan-line    { height: 2px; background: linear-gradient(90deg, transparent, rgba(242,203,7,.65), transparent); }
+   .footer-bar   { height: 6px; background: var(--yellow); }
+   .mesh-fade    { background: linear-gradient(90deg, #011638 0%, rgba(1,22,56,.55) 100%); }
+   .cobalt-grad  { background: linear-gradient(110deg, var(--cobalt), var(--deep)); }
+*/
